@@ -21,7 +21,7 @@ public class Main {
 		System.out.println(originalarray[i]);
 		}*/
         ArrayList<Integer> container_current_weights = new ArrayList<Integer>();
-        //this should run unti the entered valuesbare all removed
+        //this should run unti the entered values are all removed
         while (!originalarray.isEmpty()) {
             //go through it one by one
             for(int i=0;i<originalarray.size();i++) {
@@ -35,7 +35,7 @@ public class Main {
                         container_current_weights.get(j).add((int)originalarray.get(i));
                         originalarray.remove(i);
                     }
-                    //if all containers are full a new one it added
+                    //if all containers are full a new one is added
                     if(j==container_current_weights.size()) {
                         //this should create a new container
                         //idk if this would work (maybe it needs a new array?) i cant check cause the code stops at line35
